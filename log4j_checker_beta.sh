@@ -5,6 +5,11 @@
 # needs locate to be installed, be sure to be up-to-date with
 # sudo updatedb
 
+echo "Installing locate package…"
+sudo apt-get -qq update
+sudo apt-get -qq -y install locate
+sudo updatedb
+
 # regular expression, for which packages to scan for:
 PACKAGES='solr\|elastic\|log4j'
 
