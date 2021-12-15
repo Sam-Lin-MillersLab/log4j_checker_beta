@@ -60,7 +60,7 @@ if [ $USER != root ]; then
 fi
 
 # Set this if you have a download for sha256 hashes
-download_file=""
+download_file="https://raw.githubusercontent.com/mubix/CVE-2021-44228-Log4Shell-Hashes/main/sha256sums.txt"
 dir_temp_hashes=$(mktemp -d)
 file_temp_hashes="$dir_temp_hashes/vulnerable.hashes"
 ok_hashes=
